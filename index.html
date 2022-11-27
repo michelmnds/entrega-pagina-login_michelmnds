@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/globalStyles.css">
-    <link rel="stylesheet" href="./src/styles/index.css">
-    <title>Login</title>
-</head>
-<body>
-    <script src="./src/scripts/modal.js"></script>
-</body>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./src/styles/globalStyles.css">
+        <link rel="stylesheet" href="./src/styles/index.css">
+        <style>@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');</style>
+        
+        <title>heatWave - Login</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="containerEsq">
+                <img class="logoEmpresa" src="./src/img/logo.png" alt="heatWave Logo">
+
+                <p class="descricaoEmpresa">Lorem ipsum dolor sit amet consectetur adipisicing elit. At alias, laudantium eligendi veritatis quia expedita in optio, debitis porro ducimus non accusamus quos quam! Veritatis vel iusto quis nisi possimus?</p>
+            </div>
+
+            <div class="containerDir">
+                <div class="loginSpace">
+                    <h1 class="txtLogin">Login</h1>
+
+                    <div class="inputs">
+                        <input placeholder="Email" class="inputEmail" type="email" id="email">
+
+                        <input placeholder="Senha" class="inputPassword" type="password" id="password">
+
+                        <button class="inputButton" type="submit">Login</button>
+                    </div>
+
+                    <span id="modalToggle" data-control-modal="modal-esqueceuSenha" class="esqueceuSenha">Esqueceu a senha?</span>
+                </div>
+            </div>
+
+            <div class="containerModal">
+                <div class="modal">
+                    <div class="modalHeader">
+                        <span class="modalHeaderTxt">Esqueceu a senha:</span>
+
+                        <span id="modalToggleX" data-control-modal="modal-esqueceuSenha" class="modalHeaderX">X</span>
+                    </div>
+                    
+                    <div class="modalInputs">
+                        <span class="modalInputTxt">Insira o e-mail da conta:</span>
+
+                        <input placeholder="Email" class="modalEmail" type="email" id="modalEmailId">
+
+                        <button class="modalButton" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <script src="./src/scripts/modal.js"></script>
+    </body>
 </html>

@@ -1,1 +1,240 @@
-/* Desenvolva seu código aqui... */
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0 auto;
+    
+    width: 100%;
+}
+
+.containerEsq{
+    background-color: var(--color-orange-2);
+    
+    width: 50%;
+    height: 120vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+}
+.logoEmpresa{
+    width: 50%;
+}
+.descricaoEmpresa{
+    text-align: center;
+    color: var(--color-primary);
+
+    font-size: 16px;
+    font-weight: bold;
+    
+    margin: 0px 200px;
+}
+
+.containerDir{
+    background-color: var(--color-red-2);
+    
+    width: 50%;
+    height: 120vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.txtLogin{
+    font-size: 36px;
+    color: var(--color-primary);
+
+    margin-bottom: 42px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 23px;
+}
+
+.inputEmail, .inputPassword{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--color-primary);
+    color: var(--color-grey-1);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    
+    padding: 16px;
+
+    width: 421px;
+    height: 44px;
+
+}
+.inputButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--color-primary);
+    color: var(--color-grey-1);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    
+    padding: 16px;
+    margin-top: 88px;
+
+    width: 421px;
+    height: 44px;
+
+    cursor: pointer;
+}
+.inputButton:hover{
+    background-color: black;
+    color: white;
+}
+
+.esqueceuSenha{
+    text-decoration: none;
+    color: var(--color-primary);
+
+    font-weight: bold;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 20px;   
+
+    cursor: pointer;
+}
+.esqueceuSenha:hover{
+    text-decoration: underline;
+}
+
+
+.containerModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    transform: 1s ease;
+}
+
+
+.modal{
+    position: relative;
+    width: 620px;
+    height: 550px;
+    margin: 32px 28px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.modalHeader{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 16px 36px;
+
+    font-weight: bold;
+    font-size: 16px;
+
+    color: var(--color-primary);
+}
+.modalHeaderX{
+    cursor: pointer;
+}
+
+.modalInputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 90%;
+}
+.modalInputTxt{
+    font-weight: bold;
+    font-size: 16px;
+
+    margin-bottom: 16px;
+    margin-right: 236px;
+
+    color: var(--color-primary);
+
+}
+.modalEmail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--color-primary);
+    color: var(--color-grey-1);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    
+    padding: 16px;
+
+    width: 421px;
+    height: 44px;
+}
+.modalButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--color-primary);
+    color: var(--color-grey-1);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    
+    padding: 16px;
+    margin-top: 38px;
+    margin-right: 236px;
+
+    width: 185px;
+    height: 44px;
+
+    cursor: pointer;
+}
+.modalButton:hover{
+    background-color: black;
+    color: white;
+}
+.show-modal{
+    display: flex;
+}
+.show-modal .modal{
+    animation: modalAnimation 0.5s ease;
+}
+
+@keyframes modalAnimation{
+    0%{
+        opacity: 0;
+        transform: translateY(-68%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
